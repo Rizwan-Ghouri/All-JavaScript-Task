@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 06 (MATH EXPRESSIONS)</title>
+</head>
+<body>
+    <script>
+        
+        // var num1 = 10;
+        //   document.write(`<h1>  Result </h1> `);
+        //     document.write(`The Value of a is :${num1} <br>`);
+        //     document.write(`------------------------- <br><br>`);
+        //     ++num1;
+        //     document.write(`The Value of ++a is :${num1} <br>`);
+        //     document.write(`Now the Value of a is :${num1} <br><br>`);
+        //     document.write(`The Value of a++ is :${num1} <br>`);
+        //     num1++;
+        //     document.write(`Now the Value of a is :${num1} <br><br>`);
+        //     --num1;
+        //     document.write(`The Value of --a is :${num1} <br>`);
+        //     document.write(`Now the Value of a is :${num1} <br><br>`);
+        //     document.write(`The Value of a-- is :${num1} <br>`);
+        //     num1--;
+        //     document.write(`Now the Value of a is :${num1} <br><br>`);
+
+        // var a = 2, b = 1;
+        // var result = --a - --b + ++b + b--;
+        //     document.write(`a is :${a} <br>`);
+        //     document.write(`b is :${b} <br>`);
+        //     document.write(`result is a :${a} <br>`);
+        //     document.write(`result is b :${b} <br>`);
+
+            //** Explain the output at each stage:**//
+
+            // --a;
+            // document.write(`a is :${a} <br>`);
+            // document.write(`b is :${b} <br>`);
+            // --a - --b;
+            // document.write(`a is :${a} <br>`);
+            // document.write(`b is :${b} <br>`);
+            // --a - --b + ++b;
+            // document.write(`a is :${a} <br>`);
+            // document.write(`b is :${b} <br>`);
+            // --a - --b + ++b + b--;
+            // document.write(`--a is :${a} <br>`);
+            // document.write(`b is :${b} <br>`);
+            // document.write(`result is a :${a} <br>`)
+            // document.write(`result is b :${b} <br>`)
+
+            var totalMarks =+ prompt(`Enter Total Marks`);
+            var eng = prompt(`Enter English Obtained Marks`),urdu = prompt(`Enter Urdu Obtained Marks`),math = prompt(`Enter Math Obtained Marks`);
+            var one = 100;
+            var three = 3;
+            var sub        = totalMarks+totalMarks+totalMarks;
+            var toSub      = +eng + +urdu + +math;
+            var pereng     =+ eng*totalMarks/one;
+            var perurdu    =+ urdu*totalMarks/one;
+            var permath    =+ math*totalMarks/one;
+            var allSubper  =+ toSub/three;
+             document.write(`<table> <tr> <th> Subject </th> <th>Total Marks</th> <th>Obtained Marks</th> <th>Percentage</th> <tr>`);
+             document.write(`<tr><td>English</td><td>${totalMarks}</td><td> ${eng} </td><td>${+pereng}% </td> <tr>`);
+             document.write(`<tr><td> Urdu </td><td>${totalMarks}</td> <td> ${urdu}</td><td>${+perurdu}%</td> <tr>`);
+             document.write(`<tr><td> Math </td><td>${totalMarks}</td> <td> ${math}</td><td>${+permath}%</td> <tr>`);
+             document.write(`<tr><td></td> <th>${sub}</th> <th> ${+toSub}</th> <th>${+allSubper}%</th> <tr>`);
+             
+    </script>
+</body>
+</html>

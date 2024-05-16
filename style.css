@@ -1,0 +1,35 @@
+#continer{
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.subcontiner{
+    width: 35%;
+    height: 70%;
+    border: 1px solid rgba(255, 0, 0, 0.589);
+    background-color: rgba(255, 0, 0, 0.301);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.conchild{
+    width: 98%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #06436b;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 900;
+    font-size: larger;
+    text-decoration: none;
+}
+.conchild:hover,.conchild:focus{
+    color: #e6b000;
+}
